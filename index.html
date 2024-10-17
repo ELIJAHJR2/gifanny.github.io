@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta chartset="UTF-8">
+    <meta http-equiv="X-UA Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">                           
+    <title>GIFANY SALUD Y COSMETOLOGÍA</title>
+    <link rel="stylesheet" href="libreria/bootstrap/css/bootstrap.css">
+    <link rel="icon" href="img/icon.png" type="image/x-icon">
+</head>
+<body> 
+
+  
+        <style>
+            /* Estilos para la cabecera fija */
+            .header {
+                position: fixed;
+                top: 0;
+                width: 100%;
+                background-color: rgb(230, 223, 214);
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 20px 20px;
+                z-index: 1000;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            /* Estilo para el título a la izquierda */
+            .header .title {
+                color: rgb(100, 95, 88);
+                font-size: 24px;
+                font-weight: bold;
+            }
+    
+            .header .title span {
+                color: black;
+            }
+    
+            /* Enlaces de registrarse, iniciar sesión y carrito */
+            .header .auth-links {
+                display: flex;
+                align-items: center;
+            }
+    
+            .header .auth-links a {
+                color: black;
+                text-decoration: none;
+                margin-left: 20px;
+                font-size: 16px;
+                display: flex;
+                align-items: center;
+            }
+    
+            .header .auth-links a:hover {
+                color: #555;
+            }
+    
+            /* Estilo para el ícono del carrito */
+            .header .auth-links .cart-icon {
+                margin-left: 24px;
+                display: flex;
+                align-items: center;
+            }
+    
+            .header .auth-links .cart-icon img {
+                width: 24px;
+                height: 24px;
+            }
+    
+            /* Barra de menú debajo de la cabecera */
+            .navbar {
+                position: fixed;
+                top: 60px;
+                width: 100%;
+                background-color: rgb(3, 3, 3);
+                z-index: 999;
+                text-align: center;
+                box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+            }
+    
+            .navbar ul {
+                padding: 0;
+                margin: 0;
+                list-style: none;
+            }
+    
+            .navbar ul li {
+                display: inline-block;
+            }
+    
+            .navbar ul li a {
+                display: block;
+                padding: 15px 45px;
+                color: white;
+                text-decoration: none;
+                font-size: 17px;
+            }
+    
+            .navbar ul li a:hover {
+                background-color: #ddd;
+                color: black;
+            }
+    
+            /* Para que el contenido no se superponga con la barra */
+            .content {
+                margin-top: 120px; /* Suficiente espacio para ambas barras fijas */
+                padding: 20px;
+            }
+        </style>
+    </head>
+    <body>
+    
+        <!-- Cabecera con título y enlaces de autenticación -->
+        <div class="header">
+            <div class="title">
+                <span>GIFANY</span> <span>SALUD Y COSMETOLOGÍA</span>
+            </div>
+            <div class="auth-links">
+                <a href="iniciar.html">Regístrate</a>
+                <a href=".html">Iniciar Sesión</a>
+                <a href="carrito.html" class="cart-icon">
+                    <img src="img/carrito.webp" alt="Carrito">
+                    <table id="lista-carrito"></table>                    
+                    <span>Carrito</span>
+                </a>
+            </div>
+        </div>
+    
+        <!-- Barra de menú debajo de la cabecera -->
+        <nav class="navbar">
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#belleza">Belleza</a></li>
+                <li><a href="#consejos">Consejos</a></li>
+                <li><a href="#productos">Productos</a></li>
+                <li><a href="#tipos de piel">Tipos de piel</a></li>
+                <li><a href="#piel seca">Piel seca</a></li>
+                <li><a href="#piel grasa">Piel grasa</a></li>
+                <li><a href="#piel mixta">Piel mixta</a></li>
+                <li><a href="#comentario">Comentario</a></li>
+            </ul>
+        </nav>
+    
+   
+    </body>
+    </html>
+    
+    
+        <!-- Contenido principal -->
+        <div class="content">
+        
+    <div id="inicio"></div>
+    <div class="p-5 text-dark" style="background-color:rgb(255, 255, 246);">
+        <h3 class="text-center"><strong>DESCUBRE TU BRILLO</strong></h3>
+        <p class="text-center">La belleza no siempre es superficial pero hoy en día solo toman en cuenta lo superficial.</p>
+        <h5 class="text-center"><strong>Aqui te ayudamos a sentirte mejor contigo misma</strong></h5>
+        <img src="img/ju.jpeg" class="mx-auto d-block rounded-circle" style="width:40%">
+    </div>
+    <div class="container mt-1" id="belleza">
+        <h3><strong>BELLEZA</strong></h3>
+        <img src="img/belleza.jpg" class="float-end" alt="random" width="300" height="200"> 
+        <h4>La <span style="color: black"><strong> belleza </strong></span><span>es la expresion estetica del amor</span></h4> 
+        <p>
+            Es la noción socialmente construida que "el atractivo físico es una de las características<br>
+            más importantes de las mujeres, y algo que todas deben esforzarse por alcanzar<br>
+            y mantener".
+        </p>
+         <p><strong>Caracteristicas de la belleza fisica</strong></p>
+         <p>
+            -*Rostro perfecto, sin arrugas, ni manchas de acne<br>
+            - *Cuero cabelludo, bien cuidado y brilloso, sin caspas,etc<br>
+            - *Rostro bien hidratado.
+        </p>   
+    </div>
+    <div class="p-5 text-dark" style="background-color:rgb(221, 221, 183);" id="consejo">
+        <h3 class="text-center"><strong>Consejos de Belleza</strong></h3>
+        <br>
+        <p>Cuida tu piel y tu organismo mediante el consumo de productos antioxidantes ricos en vitamina A como las zanahorias, brócolis, pimientos, acelgas, naranjas… entre otras frutas y verduras. Las vitaminas antioxidantes son partícipes de funciones de nuestro 
+        organismo como la hidratación y la renovación en la piel, previniendo el envejecimiento celular.</p>
+        <br>
+        <h3 class="text-center"><strong>Consejos para el mejoramiento de la piel</strong></h3>
+        <div class="row">
+            <div class="col p-3 text-black" style="background-color: white"><h4 class="text-center"><strong>Limpia tu piel a diario</strong></h4>
+                <img src="img/limpieza.jpg" class= "mx-auto d-block rounded-circle" alt="limpieza" width="90" height="80">
+                <br>
+                <p class="text-center">Nuestro rostro esta expuesto<br>
+                diariamente a la polucion, los<br>
+                cambios del tiempo y otros agentes<br> 
+                externos, por lo que, aunque no nos<br>
+                hayamos maquillado, es necesario<br>
+                limpiar la piel a diario y mantenerla<br>
+                hidratada.</p>
+            </div>
+            <div class="col p-3 text-black" style="background-color: white"><h4 class="text-center"><strong>Duerme al menos 8 horas al día</strong></h4>
+                <img src="img/sueno.jpg" class= "mx-auto d-block rounded-circle" alt="sueno" width="90" height="80">
+                <br>
+                <p class="text-center">Dormir bien las horas que nos 
+                corresponden reduce bolsas y ojeras
+                optimizara la renovacion celular de nuestra piel, dormir al menos 8 horas<br>
+                es el tiempo indispensable para una buena salud fisica y mental.</p>
+            </div>
+            <div class="col p-3 text-black" style="background-color: white"><h4><strong>Aplica el protector solar</strong></h4>
+                <br>
+                <img src="img/solar.jpg" class= "mx-auto d-block rounded-circle" alt="solar" width="90" height="80">
+                <br>
+                <p class="text-center">Nunca salgas de casa sin protector<br>
+                solar. Es una recomendacion no solo estetica, 
+                tambien clinica. El protector no solo evita 
+                la aparacion prematura de arrugas,tambien
+                reduce significativamente el riesgo de contraer cancer de piel.</p>
+            </div>
+            <div class="col p-3 text-black" style="background-color: white"><h4 class="text-center"><strong>Manos Refinadas</strong></h4>
+                <br>
+                <img src="img/manos.jpg" class= "mx-auto d-block rounded-circle" alt="manos" width="90" height="80">
+                <br>
+                <p class="text-center">Aplica aceite de almendras una <br>
+                vez a la semana en tus manos y ponte guantes. Dejalos por un par de 
+                horas, o si crees que puedes dormir con ellos toda la noche,
+                sera mucho mejor el resultado obtenido para asi tener
+                manos puras</p>
+            </div>
+       </div>
+    </div>
+    <div class="p-5 text-dark" style="background-color:rgb(83, 75, 68);">
+        <!--Carrusel-->
+        <div id="demo0" class="carousel slide" data-bs-ride="carousel">
+            <!--Indicadores/puntos-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo0" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button> 
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+            </div>
+            <!--La presentacion de diapositivas/carrusel-->
+            <div class="p-2 text-dark" style="background-color:rgb(252, 251, 250);" id="productos">
+                <h4 class="text-center"><strong>PRODUCTOS PARA EL MEJORAMIENTO DE LA PIEL</strong></h4>
+            </div><br>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/foto 1.jpg" alt="foto 1" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="h1.html"><button type="button" class="btn btn-outline-light text-dark">Corrige las ojeras</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto9.jpg" alt="foto9" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="h2.html"><button type="button" class="btn btn-outline-light text-dark">Limpiador facial y desmaquillante Hydro Boost de Neutrogena</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto 3.jpg" alt="foto3" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="h3.html"><button type="button" class="btn btn-outline-light text-dark">Aceite de ricino organico</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto 4.jpg" alt="foto 4" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="h4.html"><button type="button" class="btn btn-outline-light text-dark">Serum con vitamina C de Florence</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto5.jpg" alt="foto5" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="h5.html"><button type="button" class="btn btn-outline-light text-dark">Limpiador facial de espuma CeraVe</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto6.jpg" alt="foto6" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="h6.html"><button type="button" class="btn btn-outline-light text-dark">Disco desmaquillantes reutilizables</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto7.jpg" alt="foto7" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="h7.html"><button type="button" class="btn btn-outline-light text-dark">Agua micelar de Garnier</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/foto8.jpg" alt="foto8" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="h8.html"><button type="button" class="btn btn-outline-light text-dark">Pack de cremas hidratantes de dia y de noche</button></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <!--Controles/iconos izquierdo y derecho-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo0" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo0" data-bs-slide="prev">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <br>
+    <div class="p-2 text-dark" style="background-color:rgb(207, 196, 168);" id="tipos de piel">
+        <h4 class="text-center"><strong>TIPOS DE PIEL</strong></h4>
+    </div>
+    <br>
+    <div class="p-5 text-dark" style="background-color:rgb(221, 221, 183);">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="img/hi.jpg" alt="hi" style="width:100%">
+                    <div class="card-body">
+                        <p class="card-text">Piel seca</p>
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="img/meow.jpg" alt="meow" style="width:100%">
+                    <div class="card-body">
+                        <p class="card-text">Piel grasa</p>
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="p-5 text-dark" style="background-color:rgb(83, 79, 70);">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="img/ida0c45b.png" alt="ida0c45b" style="width:100%">
+                    <div class="card-body">
+                        <p class="card-text">Piel mixta</p>
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;
+                <div class="card" style="width:300px">
+                    <img class="card-img-top" src="img/k1bmurlj.png" alt="k1bmurlj" style="width:100%">
+                    <div class="card-body">
+                        <p class="card-text">Piel sensible</p>
+                    </div>
+                </div>
+                &nbsp;&nbsp;&nbsp;
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="p-2 text-dark" style="background-color:rgb(207, 196, 168);" id="piel seca">
+        <h4 class="text-center"><strong>PIEL SECA</strong></h4>
+    </div>
+    <div class="container mt-1">
+        <p>Es una piel a la que le faltan lípidos (sebo), tiene alterada su barrera cutánea, y ya no puede desempeñar eficazmente su función protectora contra las agresiones externas. Pero, además, la piel seca es una condición crónica –se trata de un tipo de piel como lo son la mixta y grasa-, distinta de la piel deshidratada, que es una condición temporal, y una dermis reseca es siempre un terreno propicio para la aparición de eccemas.</p>
+        <p>La piel seca puede manifestarse como áspera, escamosa, enrojecida y puede en ocasiones causar dolor. Ocurre a menudo 
+        cuando no hay suficiente aceite y agua en las capas de la piel.</p>
+    </div>
+    <div class="p-2 text-dark" style="background-color:rgb(207, 196, 168);">
+        <h4 class="text-center"><strong>CARACTERISTICAS DE LA PIEL SECA</strong></h4>
+    </div>
+    <div class="container mt-1">
+        <p class="text-center">*Alberga un textura áspera<br>
+        *Cuenta con poros cerrados<br>
+        *Tiende a enrojecimientos e irritaciones<br>
+        *Es el tipo de piel mas facil de tratar<br>
+        *Predomina áreas con rojeces<br>
+        *La piel se siente áspera y fina</p>
+    </div>
+    <br>
+    <div class="p-2 text-dark" style="background-color:rgb(5, 5, 5);">
+        <h4 class="text-center" style="color: white;"><strong>PRODUCTOS RECOMENDADOS PARA LA PIEL SECA</strong></h4>
+    </div>
+    <br>
+    <div class="p-2 text-dark" style="background-color:rgb(148, 145, 145);">
+        <!--Carrusel-->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!--Indicadores/puntos-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+            </div>
+            <!--La presentacion de diapositivas/carrusel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/seca1.jpg" alt="seca1" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielseca1.html"><button type="button" class="btn btn-outline-light text-dark">Limpiador hidratantes para pieles normales a secas</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/seca2.jpg" alt="seca2" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielseca2.html"><button type="button" class="btn btn-outline-light text-dark">Serum Contorno de ojos cafeina 5% de REVOK B77 JUST</button></a>
+                    </div>
+                </div> 
+                <div class="carousel-item ">
+                    <img src="img/seca3.jpg" alt="seca3" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielseca3.html"><button type="button" class="btn btn-outline-light text-dark">Esencia Tonica Hidratante japanese ritual tonic moisturizing essence de REVOK B77</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/seca4.jpg" alt="seca4" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielseca4.html"><button type="button" class="btn btn-outline-light text-dark">Crema Reparadora para el contorno de ojos</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/seca5.jpg" alt="seca5" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielseca5.html"><button type="button" class="btn btn-outline-light text-dark">Crema Hidratante para rostro y cuerpo</button></a>
+                    </div>
+                </div> 
+                <div class="carousel-item ">
+                    <img src="img/seca6.jpg" alt="seca6" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielseca6.html"><button type="button" class="btn btn-outline-light text-dark">REVOK B77 Just Daily Sun Shield</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/seca7.jpg" alt="seca7" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielseca7.html"><button type="button" class="btn btn-outline-light text-dark">Neutrogena Ultrasheer Protector Solar FPS70+</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/seca8.jpg" alt="seca8" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielseca8.html"><button type="button" class="btn btn-outline-light text-dark">REVOK B77 Just Salicylic Acid 2% Toner</button></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Controles/iconos izquierda y derecho-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <br>
+    <div class="p-2 text-dark" style="background-color:rgb(5, 5, 5);">
+        <h4 class="text-center" style="color: white;"><strong>COMO CUIDAR MI PIEL SECA</strong></h4>
+    </div>
+    <br>
+    <div class="text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/sXXMZ8QU2QM?si=EnVB7msTWTVdZvaJ" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <div class="p-2 text-white" style="background-color: black;" id="piel grasa">
+        <h4 class="text-center" style="color: beige;"><strong>PIEL GRASA</strong></h4>
+    </div>
+    <div class="container mt-3">
+        <p>La piel grasa es una piel que produce un exceso de lípidos. Este desarreglo puede tener su origen en las variaciones hormonales, o agresiones externas como el estrés o la contaminación. A diferencia de la piel seca, en este caso las glándulas sebáceas aportan bastantes más lípidos de los necesarios. Esta grasa sobrante acarrea un exceso de brillo en la piel, en especial en la zona T. Los poros se dilatan, y pueden aparecer puntos negros e imperfecciones.</p>
+        <p>Un cutis graso tiene una apariencia porosa, húmeda y brillante. Se produce como resultado de un exceso de producción de grasa por las glándulas sebáceas.</p>
+    </div>
+    <div class="p-2 text-white" style="background-color: black;">
+        <h4 class="text-center" style="color: beige;"><strong>CARACTERISTICAS DE LA PIEL GRASA</strong></h4>
+    </div>
+    <div class="container mt-3">
+        <p class="text-center">*-Tiene un aspecto brillante.<br>
+            *-Cuenta con espinillas, puntos negros y acné por la producción excesiva de sebo.<br>
+            *-Tiende a demorar al mostrar los rasgos de envejecimiento.<br>
+            *-Textura de la piel gruesa y rugosa.<br>
+            *-Aparece rojeces y otro tipo de inflamaciones con recurremcias.<br>
+            *-Elevada producción de sebo.</p>
+    </div>
+    
+    <div class="p-2 text-white" style="background-color:rgb(5, 5, 5);">
+        <h4 class="text-center" style="color: white;"><strong>PRODUCTOS RECOMENDADOS PARA LA PIEL GRASA</strong></h4>
+    </div>
+    <br>
+    <div class="p-2 text-dark" style="background-color:rgb(148, 145, 145);">
+        <!--Carrusel-->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!--Indicadores/puntos-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+            </div>
+            <!--La presentacion de diapositivas/carrusel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/grasa1.jpg" alt="seca1" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielgr1.html"><button type="button" class="btn btn-outline-light text-dark">CERAVE ACNE CONTROL CLEANSER</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/grasa2.jpg" alt="seca2" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielgr2.html"><button type="button" class="btn btn-outline-light text-dark">DERMATOCLEAN(HYALURON) TONICO FACIAL</button></a>
+                    </div>
+                </div> 
+                <div class="carousel-item ">
+                    <img src="img/grasa5.jpg" alt="seca3" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielgr3.html"><button type="button" class="btn btn-outline-light text-dark">PROTECTOR SOLAR HIDRATANTE Y RESISTENTE FP50+ NIVEA</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/grasa3.jpg" alt="seca4" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielgr4.html"><button type="button" class="btn btn-outline-light text-dark">EFFACLAR SERUM, PIEL IMPECABLE</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/grasa4.jpg" alt="seca5" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielgr5.html"><button type="button" class="btn btn-outline-light text-dark">EFFACLAR MAT HIDRATANTE FACIAL MATIFICANTE</button></a>
+                    </div>
+                </div> 
+                <div class="carousel-item ">
+                    <img src="img/grasa6.jpg" alt="seca6" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielgr6.html"><button type="button" class="btn btn-outline-light text-dark">REVOK B77 Just Daily Sun Shield</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/grasa7.jpg" alt="seca7" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielgr7.html"><button type="button" class="btn btn-outline-light text-dark">REVITALIFT ACIDO HIAULURONICO GEL CREMA</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/grasa8.jpg" alt="seca8" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielgr8.html"><button type="button" class="btn btn-outline-light text-dark">L’ORÉAL PARIS LANZA EL NUEVO UV DEFENDER FLUIDO INVISIBLE</button></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Controles/iconos izquierda y derecho-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <br>
+
+    <div class="p-2 text-white" style="background-color: black;">
+        <h4 class="text-center" style="color: beige;"><strong>COMO CUIDAR MI PIEL GRASA</strong></h4>
+    </div>
+    <div class="text-center">
+        <br>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BsfaUIXIbNg?si=uAE6XmjeC4AT7V3c" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+    <div class="p-2 text-white" style="background-color: black;" id="piel mixta">
+        <h4 class="text-center" style="color: beige;"><strong>PIEL MIXTA</strong> </h4>
+    </div>
+    <div class="container mt-3">
+        <p>La piel mixta es aquella que es grasa en frente, nariz y mentón (zona T) y normal o seca en mejillas. Son pieles difíciles de tratar puesto que suman las características de diversos tipos de pieles, pero con una rutina adecuada, lograrás que luzca sana y bonita.</p>
+
+        <p>Tiene características de la piel seca y grasa, ya que la distribución de las glándulas sebáceas y sudoríparas no es homogénea. La zona más grasa suele corresponder a la zona T 
+        (frente, nariz y barbilla), mientras que en las mejillas la piel es normal o seca.</p>
+    </div>
+    <div class="p-2 text-white" style="background-color: black;">
+        <h4 class="text-center" style="color: beige;"><strong>CARACTERISTICAS DE LA PIEL MIXTA</strong></h4>
+    </div>
+    <div class="container mt-3">
+        <p class="text-center">*-Las glándulas sebáceas trabajan principalmente en la zona T.<br>
+            *-Cuenta con rasgos de piel seca y grasa.<br>
+            *-Es una piel difícil de tratar.<br>
+            *-Se centra en la zona de la frente, menton y nariz.<br>
+            *-Poros abiertos y aspecto brillante.<br>
+            *-Aspecto opaco y textura áspera.</p>
+    </div>
+    <br>
+    <div class="p-2 text-white" style="background-color:rgb(5, 5, 5);">
+        <h4 class="text-center" style="color: white;"><strong>PRODUCTOS RECOMENDADOS PARA LA PIEL MIXTA</strong></h4>
+    </div>
+    <br>
+    <div class="p-2 text-dark" style="background-color:rgb(148, 145, 145);">
+        <!--Carrusel-->
+        <div id="demo" class="carousel slide" data-bs-ride="carousel">
+            <!--Indicadores/puntos-->
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="3"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="4"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="5"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="6"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="7"></button>
+                <button type="button" data-bs-target="#demo" data-bs-slide-to="8"></button>
+            </div>
+            <!--La presentacion de diapositivas/carrusel-->
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/mixta1.jpg" alt="seca1" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielm1.html"><button type="button" class="btn btn-outline-light text-dark">EFFACLAR GEL ESPUMOSO PURIFICANTE </button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mixta2.jpg" alt="seca2" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielm2.html"><button type="button" class="btn btn-outline-light text-dark">EL GEL LIMPIADOR ESPUMOSO DE CERAVE</button></a>
+                    </div>
+                </div> 
+                <div class="carousel-item ">
+                    <img src="img/mixta3.jpg" alt="seca3" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielm3.html"><button type="button" class="btn btn-outline-light text-dark">THE ORDINARY NATURAL MOISTURIZING</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mixta4.jpg" alt="seca4" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="piel4m.html"><button type="button" class="btn btn-outline-light text-dark">EUCERIN DERMOPURE FLUIDO HIDRATANTE MATIFICANTE</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mixta5.jpg" alt="seca5" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="piel5m.html"><button type="button" class="btn btn-outline-light text-dark">L'OREAL PARIS LECHE LIMPIADORA, ROSA, BLANCO,</button></a>
+                    </div>
+                </div> 
+                <div class="carousel-item ">
+                    <img src="img/mixta6.jpg" alt="seca6" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="piel6m.html"><button type="button" class="btn btn-outline-light text-dark">EUCERIN SUN GEL-CREMA OIL CONTROL TOQUE SECO FPS 50+</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mixta7.jpg" alt="seca7" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielm7.html"><button type="button" class="btn btn-outline-light text-dark">FOTOPROTECTOR ISDIN FUSION FLUID SPF 50</button></a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="img/mixta8.jpg" alt="seca8" class="mx-auto d-block rounded-circle" style="width:20%">
+                    <br>
+                    <div style="text-align: center;">
+                        <a href="pielm8.html"><button type="button" class="btn btn-outline-light text-dark">BIODERMA SÉBIUM GLOBAL</button></a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+            <!--Controles/iconos izquierda y derecho-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+    <br>
+
+    <div class="p-2 text-white" style="background-color: black;">
+        <h4 class="text-center" style="color: beige;"><strong>COMO CUIDAR MI PIEL MIXTA</strong></h4>
+    </div>
+    <br>
+    <div class="text-center">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/gRONHZ7EgAY?si=bW9SOASuVpo1fQXP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+    <br>
+
+    <div class="container mt-5" id="comentario">
+        <h4 class="text-center" style="color: rgb(2, 2, 2);"><strong>Comentarios</strong></h4>
+        <form id="commentForm" class="mb-4">
+            <div class="mb-3">
+                <label for="username" class="form-label">Nombre:</label>
+                <input type="text" class="form-control" id="username" required>
+            </div>
+            <div class="mb-3">
+                <label for="comment" class="form-label">Comentario:</label>
+                <textarea class="form-control" id="comment" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn" style="background-color: #ff37c3; color: white;">Enviar Comentario</button>
+        </form>
+        
+        <div id="commentsList" class="mt-4">
+            <h5>Comentarios Recientes:</h5>
+            <ul class="list-unstyled" id="comments">
+                <!-- Aquí se agregarán los comentarios -->
+            </ul>
+        </div>
+    </div>
+    
+    <style>
+        .form-control {
+            border: 2px solid #ccc; /* Color del borde por defecto */
+            transition: border-color 0.3s; /* Transición suave */
+        }
+        
+        .form-control:focus {
+            border-color: #ff37c3; /* Color del borde al estar en foco */
+            box-shadow: 0 0 5px rgb(230, 223, 214); /* Sombra para un efecto más destacado */
+        }
+    </style>
+    
+    <script>
+        document.getElementById('commentForm').addEventListener('submit', function(event) {
+            event.preventDefault(); // Prevenir el comportamiento por defecto del formulario
+            
+            const username = document.getElementById('username').value;
+            const comment = document.getElementById('comment').value;
+            
+            const commentList = document.getElementById('comments');
+            
+            const listItem = document.createElement('li');
+            listItem.textContent = `${username}: ${comment}`;
+            listItem.className = 'border p-2 my-2'; // Estilo para los comentarios
+            commentList.appendChild(listItem);
+            
+            // Limpiar el formulario
+            document.getElementById('commentForm').reset();
+        });
+    </script>
+    
+    <div class="pie" style="width: 100%; height: 175px; background-color: #282828; color: white;">
+        <div class="pie-padre" style="margin: 0 auto; background-color: #282828; width: 80%; height: 175px; display: flex;">
+            <div class="pie-izquierda" style="  flex: 33%; margin-top: 50px; text-align: center;">
+                <h2>GIFANY SALUD Y COSMETOLOGÍA</h2>
+                
+            </div>
+            <div class="pie-centro" style="flex: 18%;">
+                <br>
+                <p>La página es 100% confidencial y segura dejanos ser los dueños de tus deseos, aqui te ayudamos a sentirte mejor contigo misma</p>
+
+
+            </div>
+            <div class="pie-derecha" style="  padding: 15px; flex: 18%; text-align: center;">
+                <h5><strong>Para más información siguenos en:</strong></h5>
+                <ul>
+                    <li>
+                        <a href="https://wa.me/59169287355"> WhatsApp </a>
+                    </li>
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=61557716444652"><img src="img/Facebook_16px.png"> Facebook</a>
+                    </li>
+                    <li>
+                        <a href= "https://www.instagram.com/gifanysaludycosmetodologia/profilecard/?igsh=emkwc3J4MnZmYmQz"><img src="img/Instagram_16px.png"> Instagram</a>
+                    </li>
+                </ul>
+
+
+
+            </div>
+        </div>
+
+    </div>
+    <script>
+        setInterval('nextImage()', 3000);
+    </script>
+</body>
+
+</html>
+    <script src="libreria/jquery/jquery.js"></script>
+    <script src="libreria/bootstrap/js/bootstrap.js"></script>
+</body>
+</html>

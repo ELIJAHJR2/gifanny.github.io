@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="carrito.html">
+    <title>Confirmación de Compra</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(230, 223, 214);
+            padding: 20px;
+        }
+        h2 {
+            text-align: center;
+        }
+        .productos {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .producto {
+            margin: 10px 0;
+        }
+        .total {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 20px;
+            text-align: center; /* Centrar el total */
+        }
+        .volver {
+            display: block;
+            margin: 20px auto;
+            text-align: center;
+            background-color: #ff37c3;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 200px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h2>Resumen de Compra</h2>
+    <div class="productos" id="productosList"></div>
+    <div class="total" id="total"></div>
+    <button class="volver" onclick="volver()">Volver al Carrito</button>
+
+    <script>
+        const productos = JSON.parse(localStorage.getItem('productos')) || [];
+        const productosList = document.getElementById('productosList');
+        const total = document.getElementById('total');
+
+        let sumaTotal = 0;
+
+        productos.forEach(producto => {
+            const div = document.createElement('div');
+            div.className = 'producto';
+            div.textContent = `${producto.nombre}: ${producto.precio} Bs`;
+            productosList.appendChild(div);
+            sumaTotal += producto.precio;
+        });
+
+        total.textContent = `Total: ${sumaTotal} Bs`;
+
+        function volver() {
+            window.location.href ="carrito.html"; 
+        }
+    </script>
+
+</body>
+</html>
+

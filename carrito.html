@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrito de Compras</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: rgb(230, 223, 214);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin: 0;
+            padding: 20px;
+        }
+        .carousel {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            width: 90%;
+            max-width: 800px;
+        }
+        .carousel img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .info {
+            text-align: center;
+            margin-top: 10px;
+        }
+        button {
+            background-color: #ff37c3;
+            color: white;
+            border: none;
+            padding: 10px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+            width: 100%;
+        }
+        button:hover {
+            background-color: #000000;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Carrito de Compras</h2>
+    <div class="carousel">
+        <div>
+            <img src="img/yanbal1.jpg" alt="Producto 1">
+            <div class="info">
+                <h3>Producto 1</h3>
+                <p>BB Cream Hidratante con Color Claro</p>
+                <p>Precio: 100.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('BB Cream Hidratante', 100)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/yanbal2.jpg" alt="Producto 2">
+            <div class="info">
+                <h3>Producto 2</h3>
+                <p>Crema Rejuvenecedora Elixir de Vida</p>
+                <p>Precio: 200.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('Crema Rejuvenecedora', 200)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/yanbal3.jpg" alt="Producto 3">
+            <div class="info">
+                <h3>Producto 3</h3>
+                <p>Suero Antigrasa para la piel del rostro</p>
+                <p>Precio: 210.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('Suero Antigrasa', 210)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/yanbal4.jpg" alt="Producto 4">
+            <div class="info">
+                <h3>Producto 4</h3>
+                <p>Hidratante Reparador Intensivo Crema Extracto Divino</p>
+                <p>Precio: 130.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('Hidratante Reparador', 130)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/yanbal5.jpg" alt="Producto 5">
+            <div class="info">
+                <h3>Producto 5</h3>
+                <p>Limpiador en Espuma Extracto Divino</p>
+                <p>Precio: 150.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('Limpiador en Espuma', 150)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/yanbal6.jpg" alt="Producto 6">
+            <div class="info">
+                <h3>Producto 6</h3>
+                <p>Crema Antiarrugas 100g Totalist+ Jalea Real Colágeno Vegano</p>
+                <p>Precio: 180.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('Crema Antiarrugas', 180)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/yanbal8.jpg" alt="Producto 7">
+            <div class="info">
+                <h3>Producto 7</h3>
+                <p>Crema Aclarante 100g Totalist+ Concha de Nacar Vitamina B3</p>
+                <p>Precio: 130.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('Crema Aclarante', 130)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/yanbal9.jpg" alt="Producto 8">
+            <div class="info">
+                <h3>Producto 8</h3>
+                <p>Crema Antiarrugas 100g Totalist+ Jalea Real Colágeno Vegano</p>
+                <p>Precio: 130.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('Crema Antiarrugas', 130)">Agregar al carrito</button>
+            </div>
+        </div>
+        <div>
+            <img src="img/yanbal10.jpg" alt="Producto 9">
+            <div class="info">
+                <h3>Producto 9</h3>
+                <p>Crema Reparadora Intensiva Extracto Divino</p>
+                <p>Precio: 180.00 Bs</p>
+                <button type="button" onclick="agregarAlCarrito('Crema Reparadora', 180)">Agregar al carrito</button>
+            </div>
+        </div>
+    </div>
+
+    <a href="continua.html"><button onclick="irACompra()" style="margin-top: 20px; background-color: #ff37c3; color: white; border: none; padding: 10px; border-radius: 5px; cursor: pointer;" >Finalizar Compra</button></a>
+
+    <script>
+        let productos = [];
+
+        function agregarAlCarrito(nombre, precio) {
+            productos.push({ nombre, precio });
+            alert(`${nombre} ha sido agregado al carrito.`);
+        }
+
+        function irACompra() {
+            localStorage.setItem('productos', JSON.stringify(productos));
+            window.location.href = 'compra.html'; // Cambia el nombre según tu archivo de compra
+        }
+    </script>
+
+</body>
+</html>
+
+
+
